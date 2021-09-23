@@ -2,12 +2,12 @@ package com.stenleone.mysurface.ui.activity
 
 import android.os.Bundle
 import android.opengl.GLSurfaceView
-import com.stenleone.mysurface.ui.openGl.OpenGLThreeAngleRenderer
 
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.stenleone.mysurface.ui.ext.supportES2
 import com.stenleone.mysurface.ui.openGl.OpenGLRenderer
+import com.stenleone.mysurface.ui.openGl.OpenGLThreeAngleRenderer
 
 class OpenGlActivity : ComponentActivity() {
 

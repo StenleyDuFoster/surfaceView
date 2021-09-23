@@ -46,7 +46,9 @@ class OpenGLThreeAngleRenderer(private val context: Context? = null) : GLSurface
 
     override fun onDrawFrame(arg0: GL10?) {
         glClear(GL_COLOR_BUFFER_BIT)
-        glDrawArrays(GL_TRIANGLES, 0, 3)
+
+        glUniform4f(uColorLocation, 1.0f, 0.0f, 1.0f, 1.0f)
+        glDrawArrays(GL_LINES, 1, 2)
     }
 
     override fun onSurfaceChanged(arg0: GL10?, width: Int, height: Int) {
