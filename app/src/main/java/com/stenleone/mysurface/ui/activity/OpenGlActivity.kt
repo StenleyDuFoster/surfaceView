@@ -6,6 +6,7 @@ import android.opengl.GLSurfaceView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.stenleone.mysurface.ui.ext.supportES2
+import com.stenleone.mysurface.ui.openGl.OpenGLCubeRender
 import com.stenleone.mysurface.ui.openGl.OpenGLRenderer
 import com.stenleone.mysurface.ui.openGl.OpenGLThreeAngleRenderer
 
@@ -29,7 +30,7 @@ class OpenGlActivity : ComponentActivity() {
         }
         glSurfaceView = GLSurfaceView(this)
         glSurfaceView.setEGLContextClientVersion(2)
-        glSurfaceView.setRenderer(OpenGLRenderer(this))
+        glSurfaceView.setRenderer(OpenGLCubeRender(this))
     }
 
     override fun onPause() {
